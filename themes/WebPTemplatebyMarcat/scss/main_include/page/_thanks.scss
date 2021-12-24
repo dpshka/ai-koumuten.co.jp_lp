@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import '../../sass_base/mixin';
+@import '../../sass_base/animate';
+@import '../../sass_base/icon_arrow';
+
+.form_sec_thanks{
+    @include marginPercent(350 , 40 , auto , 0 , auto);
+}
+.h1_form_sec_thanks{
+    @include rs_font_size(21px,2.05078125vw,5.6vw);
+    //フォント（px）【PC】:21pxpx |【Tab】21px |【sp】 21px
+    //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+}
+.h2_form_sec_thanks{
+    //@include marginPercent(350 , 60 , auto , 0 , auto);
+     @include marginPercent(350 , 30 , auto , 0 , auto);
+     font-weight: 600;
+     @include rs_font_size(16px,1.5625vw,4.266666666666667vw);
+    //フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 16px
+    //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+}
+.txt_form_sec_thanks{
+    //@include marginPercent(350 , 30 , auto , 0 , auto);
+    @include marginPercent(350 , 20 , auto , 0 , auto);
+    @include lineheight(23 , 43);
+    @include rs_font_size(14px,1.3671875vw,3.7333333333333334vw);
+    //フォント（px）【PC】:14pxpx |【Tab】14px |【sp】 14px
+    //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+}
+.button_form_sec_thanks{
+    //@include marginPercent(350 , 105 , auto , 0 , auto);
+    @include marginPercent(350 , 60 , auto , 65 , auto);
+    @include ontener_width(350 , 295);
+    a{
+        display: block;
+        height:47.4556px;
+        background: #F39800;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include kadomaru(5px);
+        @include rs_font_size(18px,1.7578125vw,4.8vw);
+        //フォント（px）【PC】:18pxpx |【Tab】18px |【sp】 18px
+        //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+    }
+}
+
+

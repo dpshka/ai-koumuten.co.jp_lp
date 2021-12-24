@@ -1,0 +1,292 @@
+@charset "utf-8";
+@import '../../sass_base/mixin';
+@import '../../sass_base/animate';
+@import '../../sass_base/icon_arrow';
+
+.form_wap {
+    @include ontener_width(375 , 350);
+    margin: 0 auto;
+}
+.page_contact,.page_confrim{
+    .form_wap_sec {
+        @include marginPercent(350 , 50 , 0 , 0 , 0 );
+    }
+}
+.page_confrim{
+    .form_cnt_sec {
+        @include rs_font_size(14px,1.3671875vw,3.7333333333333334vw);
+        //フォント（px）【PC】:14pxpx |【Tab】14px |【sp】 14px
+        //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+    }
+    .submit_privacy {
+        @include rs_font_size(14px,1.3671875vw,3.7333333333333334vw);
+        //フォント（px）【PC】:14pxpx |【Tab】14px |【sp】 14px
+        //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+    }
+}
+.form_cnt_sec {
+    @include marginPercent(350 , 0 , 0 , 25 , 0 );
+}
+.h2_form_cnt_sec {
+    background: #FDF0D9;
+    @include paddingPercent(350 , 7 , 10 , 7 , 10 );
+    .h2_form_cnt_sec_main {
+        @include rs_font_size(18px,1.7578125vw,3.7333333333333334vw);
+        //フォント（px）【PC】:18pxpx |【Tab】18px |【sp】 14px
+        //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+        letter-spacing: -0.09em;
+    }
+    .hissu_form_cnt_sec_span {
+        padding: 5px;
+        @include rs_font_size(12px,1.171875vw,2.6666666666666665vw);
+        //フォント（px）【PC】:12pxpx |【Tab】12px |【sp】 10px
+        //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+    }
+    .little_form_cnt_sec_main {
+        @include rs_font_size(12px,1.171875vw,2.933333333333333vw);
+        //フォント（px）【PC】:12pxpx |【Tab】12px |【sp】 11px
+        //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+    }
+}
+.input_form_cnt_sec {
+    @include marginPercent(350 , 5, 0 , 0 , 0 );
+    select {
+        width: 100%;
+        height: 32.967px;
+        color: #808080;
+        border: 1px solid #969696;
+        @include rs_font_size(16px,1.5625vw,4.266666666666667vw);
+        //フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 16px
+        //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+        @include media($sp){
+            @include paddingPercent(350 , 5 , 5 , 5 , 5 );
+            min-height: 8.7912vw;
+        }
+    }
+
+}
+.input_form_cnt_sec {
+    .input_text100 {
+        width: 100%;
+        border: 1px solid #969696;
+        @include rs_font_size(16px,1.5625vw,4.266666666666667vw);
+        //フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 16px
+        //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+        @include media($sp){
+            @include paddingPercent(350 , 5 , 5 , 5 , 5 );
+            min-height: 8.7912vw;
+        }
+    }
+}
+.input_form_cnt_sec {
+    .checkbox_form_cnt_sec {
+        @include marginPercent(350 , 10 , 0 , 0 , 0 );
+        display: flex;
+        justify-content: space-between;
+        .mwform-checkbox-field {
+            width: 50%;
+        }
+        label {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-weight: 500;
+            input {
+                width: 25.5132px;
+                height: 25.5132px;
+                @include media($sp) {
+                    width: 5vw;
+                    height: 5vw; 
+                }
+                line-height: 1;
+                margin-right:2vw;
+            }
+        }
+    }
+}
+.input_form_cnt_sec_address {
+    @include marginPercent(350 , 20 , 0 , 0 , 0 );
+    .txt_input_form_cnt_sec {
+        @include rs_font_size(12px,1.171875vw,3.2vw);
+        //フォント（px）【PC】:12pxpx |【Tab】12px |【sp】 12px
+        //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+    }
+}
+.input_form_cnt_sec {
+    .textarea {
+        width: 100%;
+        height: 115px;
+        border: 1px solid #969696;
+        @include media($sp) {
+            height: 30.666666666666668vw;
+        }
+    }
+}
+.form_cnt_sec .read_privacy {
+    @include marginPercent(350 , 10 , 0 , 0 , 0 );
+    @include paddingPercent(350 , 10 , 10 , 10 , 10 );
+    height: 335px;
+    overflow: auto;
+    border: 1px solid #808080;
+    @include rs_font_size(12px,1.171875vw,3.2vw);
+    //フォント（px）【PC】:12pxpx |【Tab】12px |【sp】 12px
+    //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+    @include lineheight(11.7187 , 20.5077);
+    @include media($sp) {
+        height: 90.00709333333333vw;
+    }
+    p {
+        @include lineheight(11.7187 , 20.5077);
+        @include marginPercent(350 , 0 , 0 , 20 , 0 );
+    }
+}
+.form_cnt_sec {
+    .txt_input_form_cnt_sec {
+        @include marginPercent(350 , 10 , 0 , 5 , 0 );
+        @include rs_font_size(12px,1.171875vw,3.2vw);
+        //フォント（px）【PC】:12pxpx |【Tab】12px |【sp】 12px
+        //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+        font-weight: 600;
+    }
+}
+.submit_privacy {
+    @include marginPercent(350 , 20 , 0 , 0 , 0 );
+    label {
+        align-items: flex-start;
+        display: flex;
+        justify-content: flex-start;
+        @include rs_font_size(12px,1.171875vw,3.2vw);
+        //フォント（px）【PC】:12pxpx |【Tab】12px |【sp】 12px
+        //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+        @include lineheight(11.7187 , 20.5077);
+        input {
+            margin: 0 1.5vw 0 0;
+            width: 25.5132px;
+            height: 25.5132px;
+            border: 1px solid #808080;
+            @include media($sp) {
+                width: 12.666666666666667vw;
+                height: 6.666666666666667vw;
+            }
+        }
+        .mwform-checkbox-field-text {
+            letter-spacing: -0.05em;
+        }
+    }
+}
+
+.page_contact .submit_contact{
+    @include marginPercent(350 , 30 , auto , 0 , auto );
+    @include ontener_width(350 , 295);
+    button {
+        position: relative;
+        width: 100%;
+        border: none;
+        height: 47.4557px;
+        @include kadomaru(5px);
+        background: #F39800;
+        color: #FFF;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 9%;
+            margin: auto;
+            width: 7.7972px;
+            height: 10.504px;
+            background: url(../img/arrow.png) no-repeat center center;
+            background-size: auto 100%;
+            @include media($sp) {
+                width: 2.0792533333333334vw;
+                height: 3.801067vw;
+            }
+        }
+    }
+}
+
+.page_confrim .input_form_cnt_sec {
+    @include marginPercent(350 , 20 , auto , 0 , auto );
+}
+.page_confrim .read_privacy {
+    display: none;
+}
+.page_confrim{
+    .submit_back_thanks {
+        @include marginPercent(350 , 30 , auto , 0 , auto );
+    }
+    .back_button_wap {
+        @include marginPercent(350 , 0 , auto , 0 , auto );
+        @include ontener_width(350 , 200);
+        button {
+            position: relative;
+            width: 100%;
+            border: none;
+            height: 47.4557px;
+            @include kadomaru(5px);
+            background: #DCDDDD;
+            color: #FFF;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                transform: rotate(180deg);
+                left: 9%;
+                margin: auto;
+                width: 7.7972px;
+                height: 10.504px;
+                background: url(../img/arrow.png) no-repeat center center;
+                background-size: auto 100%;
+                @include media($sp) {
+                    width: 2.0792533333333334vw;
+                    height: 3.801067vw;
+                }
+            }
+        }
+    }
+    .submit_thanks {
+        @include marginPercent(350 , 20 , auto , 0 , auto );
+        @include ontener_width(350 , 295);
+        button {
+            position: relative;
+            width: 100%;
+            border: none;
+            height: 47.4557px;
+            @include kadomaru(5px);
+            background: #F39800;
+            color: #FFF;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 9%;
+                margin: auto;
+                width: 7.7972px;
+                height: 10.504px;
+                background: url(../img/arrow.png) no-repeat center center;
+                background-size: auto 100%;
+                @include media($sp) {
+                    width: 2.0792533333333334vw;
+                    height: 3.801067vw;
+                }
+            }
+        }
+    }
+}

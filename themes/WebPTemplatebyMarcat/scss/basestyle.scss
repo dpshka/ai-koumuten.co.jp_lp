@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import 'sass_base/base';
+@import 'sass_base/mixin';
+@import 'sass_base/slider';
+@import 'sass_base/animate';
+@import 'sass_base/icon_arrow';
+@import 'sass_base/coding_guideline';
+.wapper {
+    @include wapper_setting();    
+}
+//基本設定
+ul,li,dd,dt,dh {
+    list-style: none;
+}
+svg {
+    display: block;
+}
+
+.pc_only {
+    @include pc_only();
+}
+.sp_only {
+    @include sp_only();
+}
+
+.t_center {
+    text-align: center;
+}
+img {
+    display: block;
+}
+@for $i from 0 through 60 {
+    $list : $i * 5;
+    .margin_#{$list} {
+        @include marginPercent(1920 , $list , auto , 0 , auto );
+    }
+    @for $x from 0 through 60 {
+        $listx : $x * 5;
+        .padding_top_#{$i * 5}_bottom_#{$x * 5} {
+            @include paddingPercent(1920 , $list , 0 , $listx , 0);
+        }
+    }
+}
+@for $i from 0 through 10 {
+    @for $x from 0 through 10 {
+        .pc_order_#{$i}_sp_#{$x} {
+            order: $i;
+            @include media($sp) {
+                order: $x;
+            }
+        }
+    }
+    .pc_order_#{$i} {
+        order: $i;
+        @include media($sp) {
+            order: auto;
+        }
+    }
+    .fw_#{$i*100} {
+        font-weight:$i*100;
+    }
+}
+.text_justify {
+    text-align: justify;
+    text-justify: inter-ideograph;    
+}
+.bg_8C1D26 {
+    background: #8C1D26;
+}
+.bg_8CC63F {
+    background: #8CC63F;
+}
+.cl_fff {
+    color: #FFF;
+}
+.cl_C1272D {
+    color: #C1272D;
+}
+.footer_ma {
+    @include marginPercent(375 , 40 , 0 , 0 , 0 );
+}
+@import 'main_include/header/_header_sp';
+//トップページ部分
+@import 'main_include/index/_index';
+
+@import 'main_include/page/_contact';
+@import 'main_include/page/_thanks';
+//フッター部分
+@import 'main_include/footer/_footer';
+@import 'lightbox.min';

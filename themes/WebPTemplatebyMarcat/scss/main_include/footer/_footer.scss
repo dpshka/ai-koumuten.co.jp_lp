@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import '../../sass_base/mixin';
+@import '../../sass_base/animate';
+@import '../../sass_base/icon_arrow';
+
+.footer {
+    background: #3E3A39;
+    color: #FFF;
+    @include marginPercent(375 , 25 , auto , 0 , auto );
+    @include paddingPercent(375 , 30 , 0 , 25 , 0 );
+}
+.footer_logo {
+    display: flex;
+    justify-content: center;
+    .footer_logo {
+        @include ontener_width(375 , 137);
+    }
+    .footer_instagram_logo {
+        @include ontener_width(375 , 25 );
+        @include marginPercent(375 , 0 , 0 , 0 , 20 );
+    }
+}
+
+.footer_privacy_link {
+    @include marginPercent(375 , 40 , auto , 0 , auto );
+    .button_footer_privacy_link {
+        @include rs_font_size(15px,1.46484375vw,4vw);
+        //フォント（px）【PC】:15pxpx |【Tab】15px |【sp】 15px
+        //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+        @include paddingPercent(375 , 0 , 20 , 0 , 0 );
+        color: #FFF;
+        border-bottom: 1px solid #BFB8B6;
+        background: url(../img/button_footer_privacy_link.png) no-repeat right center;
+        background-size:auto 60%;
+        text-decoration: none;
+    }
+}
+.footer_address {
+    @include marginPercent(375 , 40 , auto , 0 , auto );
+    @include rs_font_size(10px,0.9765625vw,2.6666666666666665vw);
+    //フォント（px）【PC】:10pxpx |【Tab】10px |【sp】 10px
+    //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import '../../sass_base/mixin';
+@import '../../sass_base/animate';
+@import '../../sass_base/icon_arrow';
+
+.header {
+    @include paddingPercent(375 , 15 , 15 , 15 , 15 );
+    .header_logo {
+        @include ontener_width(345 , 180);
+    }
+}
